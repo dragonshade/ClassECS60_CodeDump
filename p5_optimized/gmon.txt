@@ -1,0 +1,44 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 40.63      1.23     1.23                             Router::Dijkstra(Vertex*, Vertex*)
+ 18.17      1.78     0.55                             Router::reset()
+ 13.87      2.20     0.42                             Router::calCost(Vertex*, Edge*)
+  7.27      2.42     0.22                             Router::modularMinus(int, int)
+  6.61      2.62     0.20                             Vector<HeapObj*>::operator[](int)
+  4.96      2.77     0.15                             BinaryHeap::percolateDown(int)
+  3.63      2.88     0.11                             BinaryHeap::insert(HeapObj*)
+  1.98      2.94     0.06                             Router::calCostOrigin(Vertex*, Edge*)
+  0.99      2.97     0.03                             Router::findRoute(Trip const*, Itinerary*)
+  0.66      2.99     0.02                             BinaryHeap::findMin()
+  0.66      3.01     0.02                             Router::FindMinUnknown(BinaryHeap&)
+  0.66      3.03     0.02                             Vector<HeapObj*>::Vector(int)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.

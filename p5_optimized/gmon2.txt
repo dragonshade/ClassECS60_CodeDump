@@ -1,0 +1,47 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 44.88      1.39     1.39                             Router::Dijkstra(Vertex*, Vertex*)
+ 15.18      1.86     0.47                             Router::reset()
+ 13.88      2.29     0.43                             Router::calCost(Vertex*, Edge*)
+  9.69      2.59     0.30                             Router::modularMinus(int, int)
+  5.00      2.75     0.16                             Vector<HeapObj*>::operator[](int)
+  3.87      2.87     0.12                             BinaryHeap::insert(HeapObj*)
+  3.55      2.98     0.11                             BinaryHeap::percolateDown(int)
+  0.97      3.01     0.03                             Router::calCostOrigin(Vertex*, Edge*)
+  0.65      3.03     0.02                             BinaryHeap::findMin()
+  0.65      3.05     0.02                             BinaryHeap::deleteMin()
+  0.65      3.07     0.02                             Router::findRoute(Trip const*, Itinerary*)
+  0.32      3.08     0.01                             checkRoutes(Flight*, Trip*, int, int, Itinerary*, int, char**)
+  0.32      3.09     0.01                             Router::FindMinUnknown(BinaryHeap&)
+  0.32      3.10     0.01                             HeapObj::HeapObj(unsigned int, unsigned int)
+  0.16      3.10     0.01                             Vector<HeapObj*>::Vector(int)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
